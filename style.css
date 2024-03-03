@@ -1,0 +1,569 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ @import url('https://fonts.googleapis.com/css2?family=Anta&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,500;1,700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+/* *{
+    margin: 0;
+    padding: 0;
+    font-family: "Mulish", sans-serif;
+} */
+
+/* Shared style */
+.common-heading{
+    color: rgb(19, 19, 24);
+    font-size: 2.5rem;
+    font-weight: 800;
+    line-height: 50px;
+    margin-bottom: 2rem;
+
+}
+.common-p{
+    color: rgba(19, 19, 24, 0.7);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 26px;
+}
+.common-button{
+    border-radius: 8px;
+    background: rgb(255, 84, 0);
+    border: none;
+    padding: 0.8rem 1.2rem;
+    font-weight: 800;
+    font-size: 1.1rem;
+    line-height: 25px;
+    color: rgb(255, 255, 255);
+    margin-top: 2rem;
+}
+
+/* Header */
+header, main{
+    width: 80%;
+    margin: 5rem auto;
+    align-items: center;
+    
+}
+
+/* nav style */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+}
+.nav-logo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.nav-title{
+    font-weight: 800;
+    font-size: 2.1rem;
+}
+.journey{
+    color: rgb(255, 84, 0);
+}
+
+nav ul{
+    display: flex;
+    gap: 3rem;
+    list-style: none;
+}
+nav ul li a{
+    color: rgb(66, 66, 71);
+    font-size: 1.2rem;
+    line-height: 23px;
+    text-decoration: none;
+}
+.nav-home{
+    color: rgb(255, 84, 0);
+}
+
+#check, #checkbtn{
+    display: none;
+}
+
+
+/* Banner styles */
+.banner-section{
+    background-image: url(./Images/Group\ 13\ \(1\)\ \(1\).png);
+    background-size: cover;
+    width: 100%;
+    margin: 3rem 0;
+    border-radius: 16px;
+    
+}
+.banner-container{
+    border-radius: 16px;
+    background: linear-gradient(180.00deg, rgba(19, 19, 24, 0.8),rgba(19, 19, 24, 0) 100%);
+}
+.banner-content{
+    max-width: 800px;
+    height: auto;
+    margin: 0 auto;
+    padding: 10rem 0;
+    text-align: center;
+}
+.banner-content h1{
+    font-size: 4rem;
+    font-weight: 800;
+    line-height: 80px;
+    color: rgb(255, 255, 255);
+}
+.banner-content p{
+    margin: 2rem 0;
+    justify-content: space-between;
+    color: rgb(255, 255, 255);
+}
+.times-places{
+    display: flex;
+    justify-content: space-around;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.3);
+    padding: 1rem;
+}
+.time-points{
+    width: 174px;
+    height: 52px;
+    border-radius: 8px;
+    background: rgb(255, 255, 255);
+    border: none;
+    padding-left: 1rem;
+    line-height: 20px;
+    color: rgba(19, 19, 24, 0.5);
+}
+.find-now-button{
+    background: rgb(255, 84, 0);
+    color: rgb(255, 255, 255);
+}
+.fa-search{
+    margin-right:0.5rem;
+}
+
+/* Popular tour */
+.popular-tour{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:3rem;
+}
+.popular-tour-content{
+    max-width: 577px;;
+    height: 550px;
+}
+.popular-tour-img img{
+    width: 100%;
+    height: 550px;
+    border-radius: 16px;
+    background: linear-gradient(112.1deg, rgb(32, 38, 57) 11.4%, rgb(63, 76, 119) 70.2%);
+    }
+.p-unorder-list{
+    margin: 1rem 0;
+    margin-left: 3rem;
+}
+.li-two{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.bold-me{
+    color: rgb(19, 19, 24);
+    font-weight: 700;
+}
+
+/* Choose your Desctination */
+.why-choose-use-content p, 
+.why-choose-use-content p{
+    max-width: 643px;
+    margin: 0 auto;
+    text-align: center;
+}
+.row{
+    margin: 0 auto;
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.img-content{
+    position: relative;
+    text-align: center;
+    color: black;
+}
+.caption{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(255, 255, 255);
+    font-size: 1.8rem;
+    font-weight: 800;
+    line-height: 35px;
+}
+.img-content img{
+        width: 100%;
+        height: auto;
+}
+
+
+
+
+/* Why Choose Us */
+.why-choose-use-content{
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 4rem;
+    margin-top: 4rem;
+}
+.card-container{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    
+}
+.card{
+    max-width: 700px;
+    height: auto;
+    box-sizing: border-box;
+    border: 1px solid rgba(251, 181, 99, 0.2);
+    border-radius: 16px;
+    background: rgba(251, 181, 99, 0.05);
+}
+.card-two{
+    box-sizing: border-box;
+    border: 1px solid rgba(41, 206, 246, 0.2);
+    border-radius: 16px;
+    background: rgba(41, 206, 246, 0.05);
+}
+.card-three{
+    box-sizing: border-box;
+    border: 1px solid rgba(233, 68, 68, 0.2);
+    border-radius: 16px;
+    background: rgba(233, 68, 68, 0.05);
+}
+.card-content{
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.card img{
+    width: 50px;
+    height: 50px;
+}
+.card-title{
+    color: rgb(19, 19, 24);
+    font-size: 1.5rem;
+    font-weight: 800;
+    line-height: 30px;
+}
+
+
+
+/* Perfect place */
+.perfect-pace{
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    border: 5rem;
+}
+.video-tour{
+    max-width: 700px;
+    height: auto;
+    border-radius: 16px;
+    background: linear-gradient(180.00deg, rgb(19, 19, 24) -31.958%,rgba(19, 19, 24, 0) 100%);
+}
+.perfect-places{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+
+/* News Letter */
+.newsletter-conatainer{
+    margin-top: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+    position: relative;
+    
+}
+.newsletter-inner-content{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    box-sizing: border-box;
+    border: 1px solid rgb(255, 84, 0);
+    border-radius: 16px;
+    padding: 2rem;
+}
+.Newsletter{
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+.newsletter-content hr{
+    border: 1px solid rgba(19, 19, 24, 0.1);
+    margin: 1rem 0;
+}
+.input-container{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.newsletter-input{
+    max-width: 393px;
+    height: 52px;
+    border-radius: 8px;
+    background: rgba(19, 19, 24, 0.05);
+    border: none;
+}
+input[type="text"]::placeholder {
+    color: #999;
+    padding-left: 1rem;
+  }
+input[type="email"]::placeholder {
+    color: #999;
+    padding-left: 1rem;
+  }
+  input[type="submit"]{
+    border-radius: 8px;
+    background: rgb(255, 84, 0);
+    color: rgb(255, 255, 255);
+    font-size: 1.2rem;
+    font-weight: 800;
+  }
+  .newsletter-conatainer img{
+    position: relative;
+    width: 100%;
+  }
+  .token{
+    width: 300px;
+    height: 100px;
+    border-radius: 16px;
+    background: rgb(255, 84, 0);
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 1rem;
+    position: absolute;
+    transform: rotate(-45deg);
+    top: 55%;
+    right: -2%;
+    transform: translate(0 -50%);
+    z-index: 1;
+     }
+  .token h6{
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    font-weight: 400;
+  }
+  .token h4{
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+    font-weight: 800;
+  }
+
+
+
+
+/* review section */
+.review-container{
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 5rem;
+}
+.smart-font{
+   
+    font-size: 5rem;    
+    color: #30628b ;
+    margin-bottom: 2rem;
+}
+
+.r-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2rem;
+   }
+.review {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 16px;
+  }
+  
+  .rating {
+    margin-bottom: 10px;
+  }
+  
+  .stars {
+    color: gold;
+  }
+  
+  .text p {
+    margin: 0;
+  }
+  .details{
+    margin-top: 1rem;
+    justify-content: center;
+    align-items: center;
+  }
+  .details img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+    float: left;
+  }
+  
+  .occupation,
+  .perfect-plan {
+    margin: 5px;
+    font-weight: 500;
+  }
+  .person-name{
+    font-weight: 700;
+    color: #229954;
+  }
+  
+
+
+
+
+/* footer */
+footer{
+    width: 100%;
+    background: rgba(19, 19, 24, 0.05);
+}
+.footer-content{
+    max-width: 750px;
+    margin: auto;
+    text-align: center;
+    padding: 4rem 0;
+}
+.footer-content p{
+    margin: 2rem 0;
+}
+.footer-content ul{
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+}
+.footer-content ul li{
+    list-style: none;
+}
+.footer-content hr{
+    border: 1px solid rgba(19, 19, 24, 0.1);
+    margin: 2rem 0;
+}
+
+
+/* Responsive layout */
+@media screen and (max-width:600px) {
+   header{
+    margin-top: 2rem;
+   } 
+    .common-heading{
+        font-size: 2rem;
+    }
+    nav{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+    }
+    #check{
+        display: none;
+    }
+    #checkbtn {
+        display: block;
+    }
+    .nav-logo-container{
+        order: 1;
+    }
+    .nav-title{
+        font-size: 1.2rem;
+        order: 1;
+    }
+    nav ul{
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    z-index: 1; 
+    padding: 1rem;
+    order: 3;
+    }
+    nav ul li {
+        margin-bottom: 1rem;
+    }
+    nav ul li a{
+        display: block;
+    }
+    input[type="checkbox"]:checked ~ ul {
+        display: flex;
+        flex-direction: column;
+    }
+    .checkbtn{
+        display: block;
+        order: 2;
+    }
+    .banner-content{
+        padding: 2rem;
+    }
+    .banner-content h1{
+        font-size: 2rem;
+    }
+    
+    .time-points{
+        width: 100%;
+    }
+    .inputText{
+        margin-right: 1rem;
+    }
+
+
+    .times-places, .row, .popular-tour, .newsletter-conatainer, .perfect-places, .offer, .r-container{
+        flex-direction: column;
+        gap:2rem
+    }
+    .img-content img{
+        width: 400px;
+        height: 200px;
+    }
+    .video-tour{
+        width: 100%;
+        margin-top: 4rem;
+    }
+    .token{
+        width: 250px;
+        height: 100px;
+        top: 80%;
+        right: -4%;
+        transform: translate(0 -50%);
+         }
+    .offer-container{
+        padding: 1rem;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .footer-content{
+        padding: 2rem;
+    }
+}
